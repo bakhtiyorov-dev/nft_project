@@ -6,8 +6,56 @@
   <title>NFT MARKET</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <link rel="stylesheet" href="./main.css">
 </head>
-<body class="bg-slate-900 text-white">
-    <h1 class="text-7xl ">Hello Tailwind css</h1>
+<body class="bg-[#16091B] text-[#f5f5f5]">
+
+    <!--================= Navbar starts================= -->
+    <nav class="md:h-[15vh] h-[10vh] w-full bg-[#16091B] border-b border-b-gray-700 md:px-0 px-[1rem]">
+        <ul class="container flex items-center justify-between h-full">
+            <li>
+                <img src="./assets/logo.png" alt="" class="md:w-[66px] md:h-[66px] w-[48px] h-[48px] 
+                ">
+            </li>
+
+            <li class="md:block hidden">
+                <ul class="flex items-center gap-[2rem]">
+                    <li><a href="" class="text-[#f5f5f5] hover:text-[#FFCE4E] hover:border-b hover:border-b-[#FFCE4E]">Explore</a></li>
+                    <li><a href="" class="text-[#f5f5f5] hover:text-[#FFCE4E] hover:border-b hover:border-b-[#FFCE4E]">Creators</a></li>
+                    <li><a href="" class="text-[#f5f5f5] hover:text-[#FFCE4E] hover:border-b hover:border-b-[#FFCE4E]">Community</a></li>
+                </ul>
+            </li>
+
+            <li class="md:block hidden">
+                <button class="w-[195px] h-[64px] border border-[#FFCE4E] bg-[#E9D7A71A] text-[#FFCE4E] text-[18px] leading-[21px] font-bold font-['Work sans'] font-serif font-sans">Connect Wallet</button>
+            </li>
+
+            <li class="md:hidden block cursor-pointer" id="menu-btn">
+                <img src="./assets/menu.png" alt="">
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <nav id="mobile-menu"  class="fixed top-[-100%] transition-all duration-200 left-0 bg-[#16091B] h-screen w-full">
+        <ul class="flex flex-col items-center gap-[2rem] h-full justify-center">
+            <li id="close-btn">
+                <button class="w-[50px] h-[50px] rounded-full border border-[#FFCE4E] bg-[#E9D7A71A] text-[#FFCE4E] text-[18px] leading-[21px] font-bold ">X</button>
+            </li>
+            <li><a href="" class="text-[#f5f5f5] hover:text-[#FFCE4E] hover:border-b hover:border-b-[#FFCE4E]">Explore</a></li>
+            <li><a href="" class="text-[#f5f5f5] hover:text-[#FFCE4E] hover:border-b hover:border-b-[#FFCE4E]">Creators</a></li>
+            <li><a href="" class="text-[#f5f5f5] hover:text-[#FFCE4E] hover:border-b hover:border-b-[#FFCE4E]">Community</a></li>
+
+            <li>
+                <button class="w-[195px] h-[64px] border border-[#FFCE4E] bg-[#E9D7A71A] text-[#FFCE4E] text-[18px] leading-[21px] font-bold font-['Work sans'] font-serif font-sans">Connect Wallet</button>
+            </li>
+        </ul>
+    </nav>
+    <!----=================Navbar ends================= -->
+    
+
+    <script src="./script.js"></script>
 </body>
 </html>
